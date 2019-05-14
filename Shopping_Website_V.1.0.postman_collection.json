@@ -1,0 +1,449 @@
+{
+	"info": {
+		"_postman_id": "1af3eb9b-4069-4363-9f44-5940dd479520",
+		"name": "Shopping_Website_V.1.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET_ALL_CATEGORIES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/categories",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"categories"
+					]
+				},
+				"description": "Get all categories for the products present in the store."
+			},
+			"response": []
+		},
+		{
+			"name": "GET_ALL_CUSTOMERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/customers",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"customers"
+					]
+				},
+				"description": "Get all categories for the products present in the store."
+			},
+			"response": []
+		},
+		{
+			"name": "GET_ALL_PRODUCTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/products",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"products"
+					]
+				},
+				"description": "Get ALL products present in the store."
+			},
+			"response": []
+		},
+		{
+			"name": "GET_CATEGORY_DETAILS_FROM_CATEGORY_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/categories/{{---id----}}",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"categories",
+						"{{---id----}}"
+					]
+				},
+				"description": "Get all categories for the products present in the store."
+			},
+			"response": []
+		},
+		{
+			"name": "GET_CUSTOMER_DETAIL_BY_CUSTOMER_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/customer/{{--ID--}}",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"customer",
+						"{{--ID--}}"
+					]
+				},
+				"description": "Get One category from one of the products present in the store."
+			},
+			"response": []
+		},
+		{
+			"name": "GET_PRODUCT_DETAIL_FROM_PRODUCT_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/products/{ID}",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"products",
+						"{ID}"
+					]
+				},
+				"description": "Get ALL product detail present in the store."
+			},
+			"response": []
+		},
+		{
+			"name": "GET_ALL_PRODUCT_FROM_CATEGORY_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/products?categoryId={{---id---}}",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"products"
+					],
+					"query": [
+						{
+							"key": "categoryId",
+							"value": "{{---id---}}"
+						}
+					]
+				},
+				"description": "Get ALL products present in the store."
+			},
+			"response": []
+		},
+		{
+			"name": "GET_ALL_ORDERS_FOR_CUSTOMER_FROM_CUSTOMER_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/orders?customerId={{---id---}}",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "{{---id---}}"
+						}
+					]
+				},
+				"description": "Get ALL products present in the store."
+			},
+			"response": []
+		},
+		{
+			"name": "GET_ORDER_DETAIL_FROM_ORDER_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/orders/{{---id---}}",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"orders",
+						"{{---id---}}"
+					]
+				},
+				"description": "Get ALL products present in the store."
+			},
+			"response": []
+		},
+		{
+			"name": "PLACE_ORDER_FOR_CUSTOMER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"customerId\":123,\n\t\"products\":[1,2,3]\n}"
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/orders",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_CART_DETAILS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/cart?customerId={{--id--}}",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"cart"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "{{--id--}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD_PRODUCT_TO_CART",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"productIds\":[1,2,3,4]\n}"
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/cart?customerId={{--id--}}",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"cart"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "{{--id--}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_PAYMENT_FOR_CUSTOMER_ID_ON_PRODUCT_IDS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"productsId\":[1,2,3]\n}"
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/payments",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MAKE_PAYMENT_FOR_CUSTOMER_ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/payments?customerId={{--id--}}",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"payments"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "{{--id--}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_ADDRESS_FOR_CUSTOMER_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{URL_LOCAL_HOST}}/{{VERSION_ONE}}/customers/{--id--}/addresses",
+					"host": [
+						"{{URL_LOCAL_HOST}}"
+					],
+					"path": [
+						"{{VERSION_ONE}}",
+						"customers",
+						"{--id--}",
+						"addresses"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "987d281d-c98c-4df0-9e8e-fd19fdab257d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e332b063-5b8d-4658-957d-b908cfee13ed",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "d1a4040e-cd1a-4759-934e-9116d9dca3d5",
+			"key": "URL_LOCAL_HOST",
+			"value": "http://localhost:8084",
+			"type": "string"
+		},
+		{
+			"id": "538b4279-9b91-4a76-8d70-65a8e9428404",
+			"key": "URL_SERVER_ONE_URL",
+			"value": "http://localhost:8084",
+			"type": "string"
+		},
+		{
+			"id": "67e4a3d0-0a10-4c80-8d73-a1f945f86a01",
+			"key": "VERSION_ONE",
+			"value": "api/v1",
+			"type": "string"
+		}
+	]
+}
